@@ -1,0 +1,105 @@
+/* CSS declarations go here */
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-image: url(xmas_tree_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  overflow: hidden;
+}
+
+#main {
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.box-bg {
+  background-color: rgba(0,0,0,.4);
+}
+
+.input-field {
+  overflow: hidden;
+}
+
+.game-input {
+  padding-top: 1rem;
+}
+
+.game-input label {
+  top: 1.8rem;
+  color: #999
+}
+
+.game-input input[type=text]:focus + label {
+  color: #98060f;
+}
+
+.game-input-icon {
+  margin-left: 1rem;
+  padding-top: 1rem;
+}
+
+.game-button-half {
+  box-sizing: border-box;
+  width: 48%;
+}
+
+.game-button-full {
+  box-sizing: border-box;
+  width: 100%
+}
+
+.wrapper {
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-bottom: 0;
+  margin: auto;
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255,255,255,.9);
+  border-radius: 0;
+}
+
+.wide-wrap {
+  max-width: 1000px;
+  padding-bottom: 5.5px;
+}
+
+.collection-header {
+  color: #fff;
+  white-space: nowrap;
+  overflow: auto;
+  text-overflow: ellipsis;
+}
+
+.collection.with-header .collection-header {
+  padding: 0 15px;
+}
+
+.collection-item {
+  font-size: 1.2rem;
+  line-height: 1.75;
+}
+
+@media (min-width: 600px) {
+  .wrapper {
+    border-radius: 4px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .wide-wrap {
+    border-radius: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .wide-wrap {
+    border-radius: 4px;
+  }
+}
